@@ -2,79 +2,167 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./css/style.css">
   <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 <body>
+<div class="cards-container">
+	<div class="card-profile">
+		<div class="sec1">
+			<img src="./images/image-jeremy.png" alt="profile-pic">
+			<div class="text">
+				<small>Report for</small>
+				<p>Jeremy Robson</p>
+			</div>
+		</div>
+		<div class="sec2">
+			<button>Daily</button>
+			<button>Weekly</button>
+			<button>Monthly</button>
+		</div>
+	</div>
 
-  Report for
-  Jeremy Robson
+	<div class="card-work">
+		<div class="content">
+			<div class="head">
+				<p>Work</p>
+				<img src="./images/icon-ellipsis.svg" alt="">
+			</div>
+			<div class="body">
+				<p class="current-hrs"></p>
+				<p>Last Week - <span class="prev-hrs"></span></p>
+			</div>
+		</div>
+	</div>
 
-  Daily
-  Weekly
-  Monthly
+	<div class="card-play">
+		<div class="content">
+			<div class="head">
+				<p>Play</p>
+				<img src="./images/icon-ellipsis.svg" alt="">
+			</div>
+			<div class="body">
+				<p class="current-hrs"></p>
+				<p>Last Week - <span class="prev-hrs"></span></p>
+			</div>
+		</div>
+	</div>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+	<div class="card-study">
+		<div class="content">
+			<div class="head">
+				<p>Study</p>
+				<img src="./images/icon-ellipsis.svg" alt="">
+			</div>
+			<div class="body">
+				<p class="current-hrs"></p>
+				<p>Last Week - <span class="prev-hrs"></span></p>
+			</div>
+		</div>
+	</div>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+	<div class="card-exercise">
+		<div class="content">
+			<div class="head">
+				<p>Exercise</p>
+				<img src="./images/icon-ellipsis.svg" alt="">
+			</div>
+			<div class="body">
+				<p class="current-hrs"></p>
+				<p>Last Week - <span class="prev-hrs"></span></p>
+			</div>
+		</div>
+	</div>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+	<div class="card-social">
+		<div class="content">
+			<div class="head">
+				<p>Social</p>
+				<img src="./images/icon-ellipsis.svg" alt="">
+			</div>
+			<div class="body">
+				<p class="current-hrs"></p>
+				<p>Last Week - <span class="prev-hrs"></span></p>
+			</div>
+		</div>
+	</div>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+	<div class="card-selfcare">
+		<div class="content">
+			<div class="head">
+				<p>Self Care</p>
+				<img src="./images/icon-ellipsis.svg" alt="">
+			</div>
+			<div class="body">
+				<p class="current-hrs"></p>
+				<p>Last Week - <span class="prev-hrs"></span></p>
+			</div>
+		</div>
+	</div>
+	
+</div>
 
   
-  <div class="attribution">
+  <!-- 5hrs
+  Previous - 7hrs
+  32hrs 
+  Previous - 36hrs 
+  103hrs <
+  Previous - 128hrs <
+
+  Play
+  1hr
+  Previous - 2hrs
+  10hrs 
+  Previous - 8hrs 
+  23hrs <
+  Previous - 29hrs <
+
+  Study
+  0hrs
+  Previous - 1hr
+  4hrs 
+  Previous - 7hrs 
+  13hrs <
+  Previous - 19hrs <
+
+  Exercise
+  1hr
+  Previous - 1hr
+  4hrs 
+  Previous - 5hrs 
+  11hrs <
+  Previous - 18hrs <
+
+  Social
+  1hr
+  Previous - 3hrs
+  5hrs 
+  Previous - 10hrs 
+  21hrs <
+  Previous - 23hrs <
+
+  Self Care
+  0hrs
+  Previous - 1hr
+  2hrs 
+  Previous - 2hrs 
+  7hrs <
+  Previous - 11hrs monthly -->  
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
+
+  <script src="./script.js"></script>
 </body>
 </html>
